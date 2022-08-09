@@ -2,6 +2,7 @@
     box-sizing: border-box;
     --bg-color0 : black;
     --bg-color1 : blue; 
+    --bg-color2 : rgb(65, 188, 229);
 
     /* Text Colors */
     --txt-col0 : orange;
@@ -150,6 +151,9 @@ p{
 /* Coding Prof */
 #coding-table{
     width: 90vw;
+    color: black;
+    border-collapse: collapse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #coding-table th, #coding-table td{
@@ -158,7 +162,11 @@ p{
     margin :0.5rem;
 }
 #coding-table tr{
-    border: 5rem solid #FF9F55;
-    background-color: var(--bg-color1);
+    border: 1rem solid var(--bg-color0);
+    border-radius: 1rem;
+    background-color: var(--bg-color2);
+    box-shadow: 2px 2px 4px 4px #fcffff;
 }
+
+
   
