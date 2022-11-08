@@ -6,149 +6,84 @@
 
     /* Text Colors */
     --txt-col0 : orange;
+    --txt-col1 : #AB79D6;
 }
 /* General Section */
+
 body{
-    margin : 2rem;
-    background-color: var(--bg-color0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #000000;
     color : white;
+    align-items: center;
     line-height: 1.5rem;
-}
-a{
-    text-decoration: none;
-}
-p{
-    text-indent: 10%;
-}
-
-
-/* Most Common */
-.sec-heading{
-    color: var(--txt-col0);
-}
-.out-sec{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Profile Section */
-
-#prof-pic{
-    height: 10rem;
-    width: auto;
-    border-radius: .5rem;
-}
-
-
-/* About Section */
-.about-me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Timeline Section Start */
-  
-/* The actual timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
     color: black;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+a{
+    font-size: repeat(4, minmax(0, 1fr));
+    text-decoration: none;
+    color: rgb(60, 60, 201);
+}
+a {
+    
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+    box-shadow: inset 150px 0 0 0 #54b3d6;
+    color: white;
+  }
+
+/* =========================== */
+/* Most Common */
+/* =========================== */
+.sec-heading{
+    color: var(--txt-col0);
+    text-align: center;
+}
+.out-sec{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-/* Container around content */
-.container {
-    padding: 10px 40px;
+
+
+
+/* =========================== */
+/* About Section Starts*/
+/* =========================== */
+.hello-msg{
+    text-align: left;
+}
+.about-me{
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+}
+
+.about-me h1{
     position: relative;
-    background-color: inherit;
-    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gold;
 }
-
-/* The circles on the timeline */
-.container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+.about-me p{
+    text-indent: 5rem;
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
 }
+/* =========================== */
+/* About Section Ends*/
+/* =========================== */
 
-/* Place the container to the left */
-.left {
-    left: 0;
-}
 
-/* Place the container to the right */
-.right {
-    left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-    left: -16px;
-}
-
-/* The actual content */
-.content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-}
-
-/* Coding Prof */
+/* =========================== */
+/* Coding Section Starts */
+/* =========================== */
 #coding-table{
     width: 90vw;
     color: black;
@@ -157,16 +92,100 @@ p{
 }
 
 #coding-table th, #coding-table td{
-    /* width: 33%; */
     padding: 1rem;
     margin :0.5rem;
 }
 #coding-table tr{
-    border: 1rem solid var(--bg-color0);
-    border-radius: 1rem;
-    background-color: var(--bg-color2);
-    box-shadow: 2px 2px 4px 4px #fcffff;
+   background-color: transparent;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin: 2rem;
+    background-color: #04AA6D;
+    box-shadow: 2px 2px 4px 4px #192828;
+
+}
+.coding-prof{
+    align-items: center;
+}
+.coding-out-card{
+    border: 1px solid gray;
+}
+.coding-card{
+    padding : 0.5rem;
+    background-color: rgb(108, 101, 101);
+}
+
+/* =========================== */
+/* Codeing Section Ends */
+/* =========================== */
+
+
+
+
+
+/* =========================== */
+/* Education Starts */
+/* =========================== */
+.edu-card{
+    width: 90vw;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    padding: 2rem;
+}
+.edu-card h2{
+    text-align: center;
+    margin: 0.5rem;
+    
+}
+.edu-card h4{
+    margin: 0.5rem;
+    text-align: center;
+}
+.edu-card p{
+    margin: 0.5rem;
+    text-align: center;
+}
+
+#college-card{
+    background-color: #FFF4A3;
+}
+
+#school-card{
+    background-color: #96D4D4;
+}
+/* =========================== */
+/* Education Ends */
+/* =========================== */
+
+.line-1 {
+    height: 1px;
+    width: 90vw;
+    background: rgb(204, 106, 106);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
-  /* Sample Push */
+
+/* =========================== */
+/* Certificate Starts */
+/* =========================== */
+.grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: auto;
+    background-color: transparent;   
+}
+
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    font-size: 20px;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 5px;
+    height: rem;
+}
