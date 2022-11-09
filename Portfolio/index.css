@@ -13,6 +13,7 @@
 body{
     margin-top: 1rem;
     margin-bottom: 1rem;
+
     background-color: #000000;
     color : white;
     align-items: center;
@@ -23,18 +24,18 @@ body{
 a{
     font-size: repeat(4, minmax(0, 1fr));
     text-decoration: none;
-    color: rgb(60, 60, 201);
+    color: rgb(255, 255, 255);
 }
-a {
+/* a {
     
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
   a:hover {
-    box-shadow: inset 150px 0 0 0 #54b3d6;
+    box-shadow: inset 300px 0 0 0 #54b3d6;
     color: white;
-  }
+  } */
 
 /* =========================== */
 /* Most Common */
@@ -51,7 +52,36 @@ a {
     text-align: center;
 }
 
+/* =========================== */
+/* Nav-Bar */
+/* =========================== */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;  
+}
 
+.nav-bar a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: goldenrod;
+    font-weight: bold;
+}
+.nav-bar a:hover{
+    transform: scale(1.1);
+}
+
+/* =========================== */
+/* Banner */
+/* =========================== */
 
 
 /* =========================== */
@@ -84,6 +114,11 @@ a {
 /* =========================== */
 /* Coding Section Starts */
 /* =========================== */
+th img{
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+}
 #coding-table{
     width: 90vw;
     color: black;
@@ -101,7 +136,11 @@ a {
    margin: 2rem;
     background-color: #04AA6D;
     box-shadow: 2px 2px 4px 4px #192828;
-
+    transition: transform .2s;
+}
+#coding-table tr:hover{
+    transform: scale(1.01);
+    opacity: 0.90;
 }
 .coding-prof{
     align-items: center;
@@ -173,7 +212,7 @@ a {
 .grid-container {
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: auto;
     background-color: transparent;   
 }
@@ -189,3 +228,60 @@ a {
     border-radius: 5px;
     height: rem;
 }
+
+@media only screen and (max-width : 800px){
+    .grid-container{
+        grid-template-columns: 2fr;
+    }
+}
+
+/* Skills */
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: auto;
+}
+.skill-card{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #96D4D4;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s; 
+}
+.skill-card:hover{
+    transform: scale(1.25);
+}
+
+.skill-card img{
+    height: 64px;
+    width: 64px;
+}
+
+
+/* Contact Form Starts */
+.contact-box{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+.contact-card{
+    width: 15rem;
+}
+.contact-card h3{
+    color : gold;
+}
+.contact-card img{
+    height: 64px;
+    width: 64px;
+}
+
+
+/* Contact form ends */
