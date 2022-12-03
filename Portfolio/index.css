@@ -1,30 +1,33 @@
-*{
-    box-sizing: border-box;
-    --bg-color0 : black;
-    --bg-color1 : blue; 
-    --bg-color2 : rgb(65, 188, 229);
+* {
+  box-sizing: border-box;
+  --bg-color0: black;
+  --bg-color1: blue;
+  --bg-color2: rgb(65, 188, 229);
 
-    /* Text Colors */
-    --txt-col0 : orange;
-    --txt-col1 : #AB79D6;
+  /* Text Colors */
+  --txt-col0: orange;
+  --txt-col1: #ab79d6;
 }
 /* General Section */
 
-body{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+body {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
-    background-color: #000000;
-    color : white;
-    align-items: center;
-    line-height: 1.5rem;
-    color: black;
+  background-color: rgb(34,35,44);
+  color: white;
+  align-items: center;
+  line-height: 1.5rem;
+  color: black;
 }
 
-a{
-    font-size: repeat(4, minmax(0, 1fr));
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+a {
+  font-size: repeat(4, minmax(0, 1fr));
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+a:hover{
+  border: 1px solid white;
 }
 /* a {
     
@@ -40,248 +43,319 @@ a{
 /* =========================== */
 /* Most Common */
 /* =========================== */
-.sec-heading{
-    color: var(--txt-col0);
-    text-align: center;
+.sec-heading {
+  color: var(--txt-col0);
+  text-align: center;
 }
-.out-sec{
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.out-sec {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* =========================== */
 /* Nav-Bar */
 /* =========================== */
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-    padding: 0.3rem;
-    margin-bottom: 1rem;
-    background-color: transparent;  
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
 }
 
-.nav-bar a{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    align-items: center;
-    font-size: 1rem;
-    color: goldenrod;
-    font-weight: bold;
+.nav-bar a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  color: goldenrod;
+  font-weight: bold;
 }
-.nav-bar a:hover{
-    transform: scale(1.1);
+.nav-bar a:hover {
+  transform: scale(1.1);
 }
 
 /* =========================== */
 /* Banner */
 /* =========================== */
 
-
 /* =========================== */
 /* About Section Starts*/
 /* =========================== */
-.hello-msg{
-    text-align: left;
-}
-.about-me{
-    /* display: flex;
-    flex-direction: column; */
-    align-items: center;
+.banner{
+  display: flex;
+  flex-direction: row;
 }
 
-.about-me h1{
-    position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: gold;
+.hello-msg {
+  text-align: left;
 }
-.about-me p{
-    text-indent: 5rem;
-    color: antiquewhite;
-    font-family: 'Courier New', Courier, monospace;
+.about-me {
+  /* display: flex;
+    flex-direction: column; */
+  align-items: center;
+}
+.profile-pic{
+  width: 40%;
+}
+.profile-pic img{
+  max-width: 100%;
+  max-height: 80vh;
+}
+.about-me{
+  width: 60%;
+}
+.about-me h1 {
+  /* position: relative;  */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gold;
+}
+.about-me p {
+  text-indent: 5rem;
+  color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
 }
 /* =========================== */
 /* About Section Ends*/
 /* =========================== */
 
-
 /* =========================== */
 /* Coding Section Starts */
 /* =========================== */
-th img{
-    width: 16px;
-    height: 16px;
-    padding: 2px;
+th img {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
 }
-#coding-table{
-    width: 90vw;
-    color: black;
-    border-collapse: collapse;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#coding-table {
+  width: 90vw;
+  color: black;
+  border: none;
+  border-collapse: collapse;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#coding-table td {
+  border: 0;
 }
 
-#coding-table th, #coding-table td{
-    padding: 1rem;
-    margin :0.5rem;
+#coding-table th,
+#coding-table td {
+  padding: 1rem;
+  margin: 0.5rem;
 }
-#coding-table tr{
-   background-color: transparent;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   margin: 2rem;
-    background-color: #04AA6D;
-    box-shadow: 2px 2px 4px 4px #192828;
-    transition: transform .2s;
+#coding-table tr {
+  background-color: transparent;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 2rem;
+  background-color: #04aa6d;
+  box-shadow: 2px 2px 4px 4px #192828;
+  transition: transform 0.2s;
 }
-#coding-table tr:hover{
-    transform: scale(1.01);
-    opacity: 0.90;
+#coding-table tr:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+  border: none !important;
+  border-collapse: collapse;
 }
-.coding-prof{
-    align-items: center;
+
+.coding-prof {
+  align-items: center;
 }
-.coding-out-card{
-    border: 1px solid gray;
+.coding-out-card {
+  border: 1px solid gray;
 }
-.coding-card{
-    padding : 0.5rem;
-    background-color: rgb(108, 101, 101);
+.coding-card {
+  padding: 0.5rem;
+  background-color: rgb(108, 101, 101);
 }
 
 /* =========================== */
 /* Codeing Section Ends */
 /* =========================== */
 
-
-
-
-
 /* =========================== */
 /* Education Starts */
 /* =========================== */
-.edu-card{
-    width: 90vw;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 1rem;
-    padding: 2rem;
+.edu-card {
+  width: 90vw;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1rem;
+  padding: 2rem;
 }
-.edu-card h2{
-    text-align: center;
-    margin: 0.5rem;
-    
+.edu-card h2 {
+  text-align: center;
+  margin: 0.5rem;
 }
-.edu-card h4{
-    margin: 0.5rem;
-    text-align: center;
+.edu-card h4 {
+  margin: 0.5rem;
+  text-align: center;
 }
-.edu-card p{
-    margin: 0.5rem;
-    text-align: center;
-}
-
-#college-card{
-    background-color: #FFF4A3;
+.edu-card p {
+  margin: 0.5rem;
+  text-align: center;
 }
 
-#school-card{
-    background-color: #96D4D4;
+#college-card {
+  background-color: #fff4a3;
+}
+
+#school-card {
+  background-color: #96d4d4;
 }
 /* =========================== */
 /* Education Ends */
 /* =========================== */
 
 .line-1 {
-    height: 1px;
-    width: 90vw;
-    background: rgb(204, 106, 106);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  height: 1px;
+  width: 90vw;
+  background: rgb(204, 106, 106);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
-
 
 /* =========================== */
 /* Certificate Starts */
 /* =========================== */
 .grid-container {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: auto;
-    background-color: transparent;   
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: auto;
+  background-color: transparent;
 }
-
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 0.5rem;
-    font-size: 20px;
-    text-align: center;
-    margin: 0.5rem;
-    border-radius: 5px;
-    height: rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  font-size: 20px;
+  text-align: center;
+  margin: 0.5rem;
+  border-radius: 5px;
+  height: rem;
 }
 
-@media only screen and (max-width : 800px){
-    .grid-container{
-        grid-template-columns: 2fr;
-    }
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 2fr;
+  }
 }
 
 /* Skills */
 
-.skill-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: auto;
+.skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: auto;
+  padding: 1rem;
 }
-.skill-card{
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #96D4D4;
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: transform .2s; 
+.skill-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #96d4d4;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
 }
-.skill-card:hover{
-    transform: scale(1.25);
-}
-
-.skill-card img{
-    height: 64px;
-    width: 64px;
+.skill-card:hover {
+  transform: scale(1.25);
 }
 
+.skill-card img {
+  height: 64px;
+  width: 64px;
+}
+
+
+
+.skill-card h3{
+    width: 10rem;
+    text-align: center;
+}
+
+/* Skills Ends */
+
+
+/* Programming Starts */
+.pro-profile{
+  color: #04aa6d;
+ 
+}
+
+.coding-img{
+  width: 30%;
+  align-content: center;
+}
+
+.coding-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.coding-details{
+  width: 70%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: left;
+}
+.coding-details h1{
+  color: rgb(136, 176, 75);
+}
+.coding-details p{
+  text-indent: 20%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+}
+.coding-details p span{
+  color: gold;
+  /* font-style: italic; */
+}
+.coding-details a{
+  background-color: gray;
+  padding: 0.2rem;
+}
+
+.pro-profile-card{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+/* Programming Ends */
 
 /* Contact Form Starts */
-.contact-box{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.contact-card{
-    width: 15rem;
+.contact-card {
+  width: 15rem;
 }
-.contact-card h3{
-    color : gold;
+.contact-card h3 {
+  color: gold;
 }
-.contact-card img{
-    height: 64px;
-    width: 64px;
+.contact-card img {
+  height: 64px;
+  width: 64px;
 }
-
 
 /* Contact form ends */
