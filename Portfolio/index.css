@@ -74,6 +74,7 @@ a:hover{
   padding: 1rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 0.5rem;
+  color: var(--col5);
 }
 .sec-heading {
   color: var(--txt-col0);
@@ -284,6 +285,13 @@ th img {
 #school-card {
   background-color: var(--col5);
 }
+
+@media only screen and (max-width: 400px){
+  .education{
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* =========================== */
 /* Education Ends */
 /* =========================== */
@@ -425,6 +433,9 @@ th img {
   display: flex;
   flex-direction: row;
   margin: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--col5);
+  box-shadow: var(--col5) 0px 1.5px 6px;
 }
 @media only screen and (max-width: 400px){
   .pro-profile-card{
