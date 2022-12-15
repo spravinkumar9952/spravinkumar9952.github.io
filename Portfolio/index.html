@@ -6,26 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
   <link rel="icon" href="assets/logo.ico">
   <title>Pravinkumar S</title>
 </head>
 
 <body>
-
-  <!-- NavBar Starts -->
-  <!-- <div class="header-bar">
-    <h1 id="header">Pravinkumar S</h1>
-  </div> -->
-  
   <nav class="nav-bar">
     <div class="main-nav-bar">
-      <a href="#" id="home"> <img src="assets/logo.ico" width="40px" height="40px"></a>
-      <a href="javascript:void(0);" onclick="toggleBar()" id="nav-tog-icon"><img src="assets/list.png" alt="" id="list-icon"></a>
+      <a href="#" id="home">
+        <img src="assets/logo.ico" width="40px" height="40px">
+      </a>
+      <a href="javascript:void(0);" onclick="toggleBar()" id="nav-tog-icon">
+        <img src="assets/list.png" alt="" id="list-icon">
+      </a>
     </div>
     <div id="nav-links">
       <a href="#coding-jump" class="nav-link">Coding Profiles</a>
       <a href="#education-jump" class="nav-link">Education</a>
-      
       <a href="#skills-jump" class="nav-link">Skills</a>
       <a href="#honours-jump" class="nav-link">Honours & Awards</a>
       <a href="#contact-jump" class="nav-link">Contact Me</a>
@@ -42,107 +40,125 @@
       </div>
       <div class="about-me">
         <h1>Hello, This is Pravinkumar</h1>
-        <p>
-           I'm a competitive programmer. I had participated in more than 250+ conding contests in
-          various coding plateforms including Codeforces, Codechef, Google, Meta, Leetcode, AtCoder, HackerRank,
-          HackerEarth, SkillRack, etc.
+        <p id="about-me-para">
+          I am currently pursuing a Bachelor's degree in Computer Science Engineering at Sri Eshwar College of
+          Engineering, and I have a passion for competitive programming and solving complex data structure and algorithm
+          problems.
         </p>
-        <p>
-          I have passion in Web Development. I have good knowledge in html, css, js, Node JS, SQL. 
+
+        <p id="about-me-para"> I have participated in over 200 coding contests on platforms such as Leetcode,
+          Codeforces, and Codechef. I have consistently ranked in the top 5% of participants in Leetcode. I have
+          developed strong skills in programming languages such as C, C++, and Java, and I have used these skills to
+          solve a variety of challenging problems.
         </p>
-        
+        <p id="about-me-para">
+          In addition, I have experience with query languages such as MySQL and have some knowledge of MongoDB and cloud
+          technologies such as AWS. I am currently studying Node.js and React.js to expand my skills in web development.
+        </p>
+        <p id="about-me-para">
+          I am seeking a SDE intern role where I can apply my skills and continue to learn and grow as a software
+          engineer.
+        </p>
+
       </div>
     </div>
     <div class="line-1" style="margin-top: -3px;"></div>
   </div>
   <!-- Profile Ends -->
-    <!-- programming Starts -->
-    <div class="out-sec" id="coding-jump">
-      <h1 class="sec-heading">Coding Profiles</h1>
-      <div class="pro-profile">
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/leetcode-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>LeetCode</h1>
-            <p>In LeetCode I'm <span>Guardian Badge</span> holder. <span>Top 0.90%</span> coder around the global in LeetCode. Attended more than 50+ contests. My best contest rating is 2232. Best rank is 373 in weekly contest 317. </p>
-            <a href="https://leetcode.com/spravinkumar9952/" >LeetCode Profile Link</a>
-          </div>
-          
+
+  <!-- programming Starts -->
+  <div class="out-sec" id="coding-jump">
+    <h1 class="sec-heading">Coding Profiles</h1>
+    <div class="pro-profile">
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/leetcode-profile.png" alt="">
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/codechef-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>Codechef</h1>
-            <p>In Codechef I'm a 4⭐star coder. I had attended 20+ contests. Best global rank is 4000+ and best India rank is 3000+. Best contest rank is 55(Global) in starters 63 divison 2 contest. </p>
-            <a href="https://www.codechef.com/users/pravinkumars">Codechef Profile Link</a>
-          </div>
+        <div class="coding-details">
+          <h1>LeetCode</h1>
+          <p>In LeetCode I'm <span>Guardian Badge</span> holder. <span>Top 0.90%</span> coder around the global in
+            LeetCode. Attended more than 50+ contests. My best contest rating is 2232. Best rank is 373 in weekly
+            contest 317. </p>
+          <a class="gold-btn custom-btn" href="https://leetcode.com/spravinkumar9952/">LeetCode Profile Link</a>
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/codeforces-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>Codeforces</h1>
-            <p>In Codeforces I'm Specialist coder.I have attended more than 50 contests. My max rating is 1494. My best rank is 152 (Division 4) among 51,000 Participants</p>
-            <a href="https://codeforces.com/profile/spkumar9952">Codeforces Profile Link</a>
-          </div>
+
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/codechef-profile.png" alt="">
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/atcoder-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>AtCoder</h1>
-            <p>
-              In Atcoder I'm Green coder. I had attended more than 15 contests. My max rating in 941. My best ranking is 1164 among 8000 Participants.
-            </p>
-            <a href="https://atcoder.jp/users/PravinkumarS">AtCoder Profile Link</a>
-          </div>
+        <div class="coding-details">
+          <h1>Codechef</h1>
+          <p>In Codechef I'm a 4⭐star coder. I had attended 20+ contests. Best global rank is 4000+ and best India rank
+            is 3000+. Best contest rank is 55(Global) in starters 63 divison 2 contest. </p>
+          <a href="https://www.codechef.com/users/pravinkumars">Codechef Profile Link</a>
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/kickstart-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>Google Kickstart</h1>
-            <p>I had participated 4 rounds in google Kickstart. best ranking is 559 (Global rank)</p>
-            <a href="">Google Kickstart Certificates</a>
-          </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/codeforces-profile.png" alt="">
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/meta-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>Meta HackerCup</h1>
-            <p>I had participated Meta HackerCup 2022. Qualified for first round.</p>
-            <a href="">Meta HackerCup Certificates</a>
-          </div>
+        <div class="coding-details">
+          <h1>Codeforces</h1>
+          <p>In Codeforces I'm Specialist coder.I have attended more than 50 contests. My max rating is 1494. My best
+            rank is 152 (Division 4) among 51,000 Participants</p>
+          <a href="https://codeforces.com/profile/spkumar9952">Codeforces Profile Link</a>
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/codejam-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>Google Codejam</h1>
-            <p>I had participated Google codejam 2022. Cleard qualification round. Qualified for 1st round. My best rank is 3358</p>
-            <a href="">Codejam Certificates Links</a>
-          </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/atcoder-profile.png" alt="">
         </div>
-        <div class="pro-profile-card">
-          <div class="coding-img">
-            <img src="assets/skillrack-profile.png" alt="">
-          </div>
-          <div class="coding-details">
-            <h1>SkillRack</h1>
-            <p>I had solved more than 3000+ problems in skillrack. Won CPL 2022 sep contest.</p>
-            <a href="">Skillrack Profile Link</a>
-          </div>
+        <div class="coding-details">
+          <h1>AtCoder</h1>
+          <p>
+            In Atcoder I'm Green coder. I had attended more than 15 contests. My max rating in 941. My best ranking is
+            1164 among 8000 Participants.
+          </p>
+          <a href="https://atcoder.jp/users/PravinkumarS">AtCoder Profile Link</a>
         </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/kickstart-profile.png" alt="">
+        </div>
+        <div class="coding-details">
+          <h1>Google Kickstart</h1>
+          <p>I had participated 4 rounds in google Kickstart. best ranking is 559 (Global rank)</p>
+          <a href="">Google Kickstart Certificates</a>
+        </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/meta-profile.png" alt="">
+        </div>
+        <div class="coding-details">
+          <h1>Meta HackerCup</h1>
+          <p>I had participated Meta HackerCup 2022. Qualified for first round.</p>
+          <a href="">Meta HackerCup Certificates</a>
+        </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/codejam-profile.png" alt="">
+        </div>
+        <div class="coding-details">
+          <h1>Google Codejam</h1>
+          <p>I had participated Google codejam 2022. Cleard qualification round. Qualified for 1st round. My best rank
+            is 3358</p>
+          <a href="">Codejam Certificates Links</a>
+        </div>
+      </div>
+      <div class="pro-profile-card">
+        <div class="coding-img">
+          <img src="assets/skillrack-profile.png" alt="">
+        </div>
+        <div class="coding-details">
+          <h1>SkillRack</h1>
+          <p>I had solved more than 3000+ problems in skillrack. Won CPL 2022 sep contest.</p>
+          <a href="">Skillrack Profile Link</a>
+        </div>
+      </div>
     </div>
     <div class="line-1"></div>
   </div>
@@ -156,11 +172,11 @@
       <div class="edu-card" id="college-card">
         <h2 class="sub-heading">Sri Eshwar College Of Engineering, Coimbatore</h1>
           <h4 class="degree">Bachelor of Computer Science and Engineering</h4>
-  
+
           <p>Core Subjects : Design Datastructures and Algorithms, Python, C, OOPS in Java, DBMS, Computer Networks</p>
       </div>
       <!-- College Ended -->
-  
+
       <!-- HSC Starts-->
       <div class="edu-card" id="school-card">
         <h2 class="sub-heading">CMSES David Memorial Higher Secondary School, Karisal</h1>
@@ -258,7 +274,7 @@
   <div class="out-sec" id="honours-jump">
     <h1 class="sec-heading">Honours & Awards</h1>
     <div class="certificate-container">
-      
+
       <div class="certificate-details">
         <ul>
           <li>
@@ -279,96 +295,35 @@
     </div>
     <div class="line-1"></div>
   </div>
-  <!-- Honours and Awards Started -->
-  <!-- <div class="out-sec">
-    <h1 class="sec-heading">Certifications</h1>
-    <div class="cert-row">
-      <div class="cert-column">
-        <img data-enlargable src="certificates/aws-bussines.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img data-enlargable src="certificates/codevita-2022.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img data-enlargable src="certificates/aws-bussines.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img data-enlargable src="certificates/aws-bussines.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img data-enlargable src="certificates/aws-bussines.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
 
-      <div class="cert-column">
-        <img src="certificates/meta-hackercup-2022.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img src="certificates/codejam-2022.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img src="certificates/guvi-world-record.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img src="certificates/nptel-dbms.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-      <div class="cert-column">
-        <img src="certificates/nptel-dbms.png" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat suscipit ab officia labore rerum voluptas in ipsum atque ex dolorem corporis id totam, ducimus veniam explicabo odio deserunt laboriosam. Fugit.</p>
-      </div>
-    </div>
-  </div> -->
-  <!-- Hounour and Awards Ended -->
   <!-- Contact Starts -->
   <div class="out-sec" id="contact-jump">
     <h1 class="sec-heading">Contact me</h1>
     <div class="contact-box">
       <div class="contact-card">
         <a href="mailto:spravinkumar9952@gmail.com"><img src="assets/gmail.png" alt="">
-        <h3>Email</h3>
-        spravinkumar9952@gmail.com</a>
+          <h3>Email</h3>
+          spravinkumar9952@gmail.com
+        </a>
       </div>
       <div class="contact-card">
         <a href="tel:+916379753872"><img src="assets/telephone.png" alt="">
-        <h3>Phone</h3>
-        +91 63797 53872</a>
+          <h3>Phone</h3>
+          +91 63797 53872
+        </a>
       </div>
       <div class="contact-card">
         <a href="https://www.linkedin.com/in/pravinkumar-s/" target="_blank"><img src="assets/linkedin.png" alt="">
-        <h3>Linkedin</h3>
-        @pravinkumar-s</a>
+          <h3>Linkedin</h3>
+          @pravinkumar-s
+        </a>
       </div>
     </div>
   </div>
   <!-- Contact Ends -->
-
-  <!-- Scritps -->
-  <script>
-    const toggleBar = () =>{
-      let navTog = document.getElementById("nav-links");
-      let listIcon = document.getElementById("list-icon");
-      if(navTog.style.display === "flex"){
-        navTog.style.display = "none";
-        listIcon.src = "assets/list.png"
-      }else{
-        navTog.style.display = "flex";
-        navTog.style.flexDirection = "column";
-        listIcon.src = "assets/close.png"
-      }
-    }
-  </script>
 </body>
 <footer>
   <p>Developed with ❤️ by Pravinkumar S</p>
 </footer>
-</html>
 
-<!--  -->
+</html>
