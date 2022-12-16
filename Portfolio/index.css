@@ -379,6 +379,17 @@ p {
   box-shadow: var(--col5) 0px 1.5px 6px;
 }
 
+.coding-details-list{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: Menlo, Monaco, Consolas;
+  color: wheat;
+}
+
+.coding-details-list li{
+  margin-bottom: 0.2rem;
+}
+
 @media only screen and (max-width: 400px) {
   .pro-profile-card {
     display: flex;
